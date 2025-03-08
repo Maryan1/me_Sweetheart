@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body  id="bodyId">
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeVideo()">&times;</span>
+            <video controls>
+                <source src="IMG_8535.mp4" type="video/mp4">
+                Ваш браузер не підтримує відео.
+            </video>
+        </div>
+    </div>
+  
+
+    <div class="overlay" id="overlay" onclick="hidePopup()"></div>
+    
+    <div class="popup" id="popup">
+        <h2>Завдання № 4</h2>
+        <p>Так тримати, котику "Мяу <b onclick="May()">🐱</b>" Нажми на котика!!! </p>
+        <p>Моя улюблена пісня котру я вже довгий час слухаю?</p>
+        <p>Шукай підказку на минулих  <b> сторінках </b></p>
+        <p>ТИ зможеш тримаю за тебе  ✊✊✊✊</p>
+        <button onclick="hidePopup()">Закрити</button>
+    </div>
+  
+    <div class="toggle-switch">
+        <div class="click" onclick="change ()">
+        <label class="switch-label"  >
+          <input type="checkbox"   class="checkbox">
+          <span class="slider"></span>
+        </label>
+    </div>
+ 
+    
+      </div>  
+   <div class="form__group field">
+
+
+
+        <input type="text" id="inputtext" oninput="this.style.width = this.scrollWidth + 'px'"  class="form__field" placeholder="Name" required="wda">
+        <label for="name" class="form__label">Відповідь </label>
+        <br/>  <br/> 
+        <button id ="but1"onclick="buttonClick3()"class="buttonClick">Let's go </button>
+        <button id ="but2" onclick="showPopup()"  class="buttonClick">Допомога </button>
+      
+        
+    </div>
+    <button id ="but3"onclick="openVideo()"   class="buttonClick">? </button>
+    <script src="index.js"></script>
+    
+</body>
+</html>
